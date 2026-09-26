@@ -1,0 +1,47 @@
+# Private and library-specific: never commit (see CLAUDE.md)
+config.local.toml
+docs/private/
+
+# Outputs and caches
+.cache/
+runs/
+*.jsonl
+report.html
+
+# Anything that could come from a media library
+*.srt
+*.ass
+*.ssa
+*.sub
+*.idx
+*.vtt
+*.sup
+*.smi
+*.mkv
+*.mp4
+*.m4v
+*.avi
+*.mov
+*.wmv
+*.ts
+*.m2ts
+*.webm
+*.mpg
+*.mpeg
+*.flv
+*.wav
+*.flac
+*.mp3
+*.m4a
+
+# Synthetic test fixtures are the one exception
+!tests/fixtures/**
+
+# Python and uv
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# macOS
+.DS_Store
